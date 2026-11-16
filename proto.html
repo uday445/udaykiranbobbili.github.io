@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uday Kiran Bobbili | Java Full Stack Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        beach: {
+                            50: '#FAF7F2',   /* Pale sea salt sand */
+                            100: '#F4ECE1',  /* Warm sunlit dune */
+                            200: '#E8DAC8',  /* Wet sand border */
+                            300: '#D7C2AB',  /* Light driftwood */
+                            400: '#BA9C7D',  /* Caramel sand */
+                        },
+                        brown: {
+                            500: '#9C6644',  /* Toasted cinnamon */
+                            600: '#7F4F24',  /* Driftwood bark */
+                            700: '#5A381E',  /* Rich roasted walnut */
+                            800: '#3D2514',  /* Deep coastal coffee */
+                            900: '#26160A',  /* Dark espresso / text tone */
+                        },
+                        amberbeach: {
+                            500: '#DDA15E',  /* Golden hour sunset */
+                            600: '#BC6C25',  /* Earthy terracotta sand */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-beach-50 text-brown-900 font-sans antialiased selection:bg-brown-700 selection:text-beach-50">
+
+    <!-- Subtle Top Sand Gradient Ribbon -->
+    <div class="h-2 w-full bg-gradient-to-r from-brown-800 via-amberbeach-600 to-beach-300"></div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 w-full bg-beach-50/90 backdrop-blur-md border-b border-beach-200 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-heading font-extrabold tracking-tight text-brown-900">
+                UDAY<span class="text-amberbeach-600">.DEV</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-brown-700">
+                <a href="#about" class="hover:text-brown-900 transition">About</a>
+                <a href="#skills" class="hover:text-brown-900 transition">Skills</a>
+                <a href="#projects" class="hover:text-brown-900 transition">Projects</a>
+                <a href="#education" class="hover:text-brown-900 transition">Education</a>
+                <a href="#contact" class="hover:text-brown-900 transition">Contact</a>
+            </div>
+            <a href="mailto:uday445bobbili@gmail.com" class="inline-flex items-center gap-2 px-5 py-2 text-sm font-medium rounded-full bg-brown-800 hover:bg-brown-900 text-beach-50 transition shadow-sm hover:shadow-md">
+                Hire Me <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Info Column -->
+            <div class="md:col-span-7 space-y-6 text-center md:text-left order-2 md:order-1">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-beach-300 bg-beach-100 text-brown-800 text-xs font-semibold">
+                    <span class="w-2.5 h-2.5 rounded-full bg-amberbeach-600 animate-pulse"></span>
+                    Available for Java & Backend Opportunities
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-heading font-extrabold text-brown-900 leading-[1.12]">
+                    Hi, I'm <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brown-800 via-amberbeach-600 to-brown-600">
+                        Uday Kiran Bobbili
+                    </span>
+                </h1>
+
+                <p class="text-lg sm:text-xl text-brown-700 font-medium">
+                    Java Full Stack Developer | Backend Specialist & Software Engineer
+                </p>
+
+                <p class="text-brown-600 text-base sm:text-lg leading-relaxed max-w-xl">
+                    Computer Science graduate skilled in building secure, production-grade applications using <strong>Java, Spring Boot, React.js, MySQL, and REST APIs</strong>.
+                </p>
+
+                <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-7 py-3.5 rounded-full bg-brown-800 hover:bg-brown-900 text-beach-50 font-medium transition shadow-md shadow-brown-900/15">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="px-7 py-3.5 rounded-full bg-beach-100 hover:bg-beach-200 border border-beach-300 text-brown-900 font-medium transition">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <!-- Socials & Direct Reach -->
+                <div class="pt-4 flex justify-center md:justify-start items-center gap-6 text-2xl text-brown-600">
+                    <a href="https://github.com" target="_blank" class="hover:text-brown-900 transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-brown-900 transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:uday445bobbili@gmail.com" class="hover:text-brown-900 transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+918555906246" class="hover:text-brown-900 transition" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <!-- Right: Photo Display -->
+            <div class="md:col-span-5 flex justify-center order-1 md:order-2">
+                <div class="relative w-64 h-80 sm:w-80 sm:h-96">
+                    <!-- Warm Sand Ambient Glow Backdrop -->
+                    <div class="absolute -inset-3 bg-gradient-to-tr from-amberbeach-500/30 via-beach-200 to-brown-500/20 rounded-3xl blur-xl"></div>
+                    
+                    <!-- Framed Photo Card -->
+                    <div class="relative w-full h-full bg-beach-100 p-2.5 rounded-2xl shadow-xl border border-beach-300 overflow-hidden group">
+                        <img 
+                            src="profile.jpg" 
+                            alt="Uday Kiran Bobbili" 
+                            class="w-full h-full object-cover rounded-xl transition duration-500 group-hover:scale-105"
+                            onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop'"
+                        >
+                        <!-- Bottom Nameplate -->
+                        <div class="absolute inset-x-2.5 bottom-2.5 bg-gradient-to-t from-brown-900/95 via-brown-900/60 to-transparent p-4 rounded-b-xl text-beach-50">
+                            <p class="text-xs uppercase font-semibold tracking-wider text-beach-200">Software Engineer</p>
+                            <p class="text-lg font-heading font-bold">Uday Kiran Bobbili</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Hackathon Badge -->
+                    <div class="absolute -bottom-4 -left-4 bg-beach-50/95 backdrop-blur border border-beach-300 shadow-lg px-4 py-2.5 rounded-2xl flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-amberbeach-500/20 text-brown-800 flex items-center justify-center font-bold text-sm">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <div class="text-[11px] font-bold text-brown-900 leading-tight">1st Prize Winner</div>
+                            <div class="text-[10px] text-brown-600 leading-tight">College Hackathon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Key Metrics Ribbon -->
+    <section class="bg-beach-100 border-y border-beach-200 py-10 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-3">
+                <div class="text-3xl sm:text-4xl font-heading font-extrabold text-brown-800">2025</div>
+                <div class="text-xs sm:text-sm font-medium text-brown-600 mt-1">B.Tech in Computer Science</div>
+            </div>
+            <div class="p-3">
+                <div class="text-3xl sm:text-4xl font-heading font-extrabold text-brown-800">7.02</div>
+                <div class="text-xs sm:text-sm font-medium text-brown-600 mt-1">Undergraduate CGPA</div>
+            </div>
+            <div class="p-3">
+                <div class="text-3xl sm:text-4xl font-heading font-extrabold text-brown-800">Full Stack</div>
+                <div class="text-xs sm:text-sm font-medium text-brown-600 mt-1">Spring Boot + React.js</div>
+            </div>
+            <div class="p-3">
+                <div class="text-3xl sm:text-4xl font-heading font-extrabold text-brown-800">REST APIs</div>
+                <div class="text-xs sm:text-sm font-medium text-brown-600 mt-1">Design & Integration</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="max-w-3xl mx-auto text-center space-y-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-amberbeach-600">Profile Overview</span>
+            <h2 class="text-3xl sm:text-4xl font-heading font-bold text-brown-900">About Me</h2>
+            <p class="text-brown-700 leading-relaxed text-base sm:text-lg">
+                I am a detail-oriented Java Full Stack Developer with hands-on experience building full-stack web applications, role-based security layers, and relational databases. I have developed modular platforms like <strong>Hostel Management</strong> and <strong>Library Management Systems</strong>, and was awarded 1st prize in a college hackathon for creating a live currency conversion system.
+            </p>
+            <div class="pt-4 flex flex-wrap justify-center gap-6 text-sm text-brown-800">
+                <span class="inline-flex items-center gap-2"><i class="fa-solid fa-location-dot text-amberbeach-600"></i> Andhra Pradesh, India</span>
+                <span class="inline-flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-amberbeach-600"></i> KIET, Kakinada (2025)</span>
+                <span class="inline-flex items-center gap-2"><i class="fa-solid fa-language text-amberbeach-600"></i> English, Telugu, Hindi</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="py-20 bg-beach-100/60 border-y border-beach-200 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 space-y-2">
+                <span class="text-xs font-bold uppercase tracking-widest text-amberbeach-600">Core Proficiencies</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-brown-900">Technical Skills</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Backend -->
+                <div class="p-6 rounded-2xl bg-beach-50 border border-beach-200 hover:border-amberbeach-500/50 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-beach-200 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mb-2">Backend Technologies</h3>
+                    <p class="text-xs text-brown-600 mb-4">Enterprise Java microservices, MVC, and ORM.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Java</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Spring Boot</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Spring MVC</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Spring Data JPA</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Hibernate</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">REST APIs</span>
+                    </div>
+                </div>
+
+                <!-- Security & Database -->
+                <div class="p-6 rounded-2xl bg-beach-50 border border-beach-200 hover:border-amberbeach-500/50 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-beach-200 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mb-2">Security & Database</h3>
+                    <p class="text-xs text-brown-600 mb-4">Role-based controls, tokens, and relational design.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Spring Security</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">JWT Authentication</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">MySQL</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Database Design</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="p-6 rounded-2xl bg-beach-50 border border-beach-200 hover:border-amberbeach-500/50 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-beach-200 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mb-2">Frontend Development</h3>
+                    <p class="text-xs text-brown-600 mb-4">Component-driven architecture and responsive styling.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">React.js</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">JavaScript</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">HTML5</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">CSS3</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & Testing -->
+                <div class="p-6 rounded-2xl bg-beach-50 border border-beach-200 hover:border-amberbeach-500/50 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-beach-200 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mb-2">Cloud & Testing</h3>
+                    <p class="text-xs text-brown-600 mb-4">Cloud infrastructure and API test suites.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">AWS EC2</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">AWS S3</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Swagger</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Postman</span>
+                    </div>
+                </div>
+
+                <!-- Dev Tools -->
+                <div class="p-6 rounded-2xl bg-beach-50 border border-beach-200 hover:border-amberbeach-500/50 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-beach-200 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mb-2">Version Control & Tools</h3>
+                    <p class="text-xs text-brown-600 mb-4">Dependency management and software tooling.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Git / GitHub</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Maven</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">IntelliJ IDEA</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">STS</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">VS Code</span>
+                    </div>
+                </div>
+
+                <!-- Core CS -->
+                <div class="p-6 rounded-2xl bg-beach-50 border border-beach-200 hover:border-amberbeach-500/50 hover:shadow-md transition">
+                    <div class="w-11 h-11 rounded-xl bg-beach-200 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mb-2">Core CS Foundations</h3>
+                    <p class="text-xs text-brown-600 mb-4">Algorithm design and architecture patterns.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">OOP</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Collections Framework</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">Data Structures</span>
+                        <span class="text-xs font-medium px-2.5 py-1 bg-white border border-beach-200 rounded-lg text-brown-800">MVC Architecture</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16 space-y-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-amberbeach-600">Featured Work</span>
+            <h2 class="text-3xl sm:text-4xl font-heading font-bold text-brown-900">Projects Showcase</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="p-8 bg-beach-100/50 border border-beach-200 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center text-xs font-bold mb-4">
+                        <span class="text-brown-800 bg-beach-200/80 px-3 py-1 rounded-md uppercase tracking-wider">Full Stack App</span>
+                        <span class="text-brown-600">2026</span>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold text-brown-900 mb-3">Hostel Management System</h3>
+                    <p class="text-brown-700 text-sm leading-relaxed mb-4">
+                        An end-to-end full-stack solution to streamline room allocation, candidate registration, vacancy management, and automated fee administration.
+                    </p>
+                    <ul class="text-xs text-brown-700 space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-amberbeach-600 mt-0.5"></i>
+                            <span>Designed RESTful APIs for candidate onboarding, room allocation, and automated fee calculations.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-amberbeach-600 mt-0.5"></i>
+                            <span>Implemented file uploads for tenant ID proofs and payment receipts with due/late fee tracking.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-xs font-mono font-medium px-2 py-1 bg-white border border-beach-200 text-brown-800 rounded">Java</span>
+                        <span class="text-xs font-mono font-medium px-2 py-1 bg-white border border-beach-200 text-brown-800 rounded">Spring Boot</span>
+                        <span class="text-xs font-mono font-medium px-2 py-1 bg-white border border-beach-200 text-brown-800 rounded">React.js</span>
+                        <span class="text-xs font-mono font-medium px-2 py-1 bg-white border border-beach-200 text-brown-800 rounded">MySQL</span>
+                    </div>
+                    <a href="https://github.com" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-brown-800 hover:text-brown-600 transition">
+                        <i class="fa-brands fa-github text-base"></i> View on GitHub &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="p-8 bg-beach-100/50 border border-beach-200 rounded-3xl shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center text-xs font-bold mb-4">
+                        <span class="text-brown-800 bg-beach-200/80 px-3 py-1 rounded-md uppercase tracking-wider">Backend Application</span>
+                        <span class="text-brown-600">2025</span>
+                    </div>
+                    <h3 class="text-2xl font-heading font-bold text-brown-900 mb-3">Library Management System</h3>
+                    <p class="text-brown-700 text-sm leading-relaxed mb-4">
+                        A secure, modular academic library engine featuring role-based authentication, book search with filters, fine calculations, and due-date tracking.
+                    </p>
+                    <ul class="text-xs text-brown-700 space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-amberbeach-600 mt-0.5"></i>
+                            <span>Configured Spring Security with Role-Based Access Control (Admin and Student roles).</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-circle-check text-amberbeach-600 mt-0.5"></i>
+                            <span>Optimized data access through Spring Data JPA and MySQL for a clean, modular architecture.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-xs font-mono font-medium px-2 py-1 bg-white border border-beach-200 text-brown-800 rounded">Spring Boot</span>
+                        <span class="text-xs font-mono font-medium px-2 py-1 bg-white border border-beach-200 text-brown-800 rounded">Spring Security</span>
+                        <span class="text-xs font-mono font-medium px-2 py-1 bg-white border border-beach-200 text-brown-800 rounded">Spring Data JPA</span>
+                        <span class="text-xs font-mono font-medium px-2 py-1 bg-white border border-beach-200 text-brown-800 rounded">MySQL</span>
+                    </div>
+                    <a href="https://github.com" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-brown-800 hover:text-brown-600 transition">
+                        <i class="fa-brands fa-github text-base"></i> View on GitHub &rarr;
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathon & Certifications -->
+    <section id="education" class="py-20 bg-beach-100 border-t border-beach-200 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 space-y-2">
+                <span class="text-xs font-bold uppercase tracking-widest text-amberbeach-600">Achievements</span>
+                <h2 class="text-3xl sm:text-4xl font-heading font-bold text-brown-900">Hackathons & Certifications</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Hackathon Winner -->
+                <div class="p-6 bg-beach-50 rounded-2xl border border-beach-200 shadow-sm relative overflow-hidden">
+                    <div class="w-10 h-10 rounded-xl bg-amberbeach-500/20 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <span class="text-xs font-bold text-amberbeach-600 uppercase tracking-wider">1st Prize Winner</span>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mt-1">College Hackathon</h3>
+                    <p class="text-xs text-brown-700 mt-2 leading-relaxed">
+                        Developed a real-time currency converter application with live exchange rate integration.
+                    </p>
+                </div>
+
+                <!-- Cert 1 -->
+                <div class="p-6 bg-beach-50 rounded-2xl border border-beach-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-xl bg-beach-200 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brown-500 uppercase tracking-wider">Udemy • 2025</span>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mt-1">Java Master Class</h3>
+                    <p class="text-xs text-brown-700 mt-2 leading-relaxed">
+                        Core Java, OOP principles, Collections Framework, Exception Handling, and Multithreading.
+                    </p>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="p-6 bg-beach-50 rounded-2xl border border-beach-200 shadow-sm">
+                    <div class="w-10 h-10 rounded-xl bg-beach-200 text-brown-800 flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <span class="text-xs font-bold text-brown-500 uppercase tracking-wider">LetsUpGrade • 2025</span>
+                    <h3 class="text-lg font-heading font-bold text-brown-900 mt-1">Java Project Bootcamp</h3>
+                    <p class="text-xs text-brown-700 mt-2 leading-relaxed">
+                        Hands-on practical training in debugging, testing, and optimizing production Java code.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <span class="text-xs font-bold uppercase tracking-widest text-amberbeach-600">Connect</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-brown-900 mt-1">Let's Discuss Opportunities</h2>
+        <p class="text-brown-700 mt-3 max-w-xl mx-auto text-sm sm:text-base">
+            Open for full-time roles as a Java Full Stack Developer, Backend Developer, or Software Engineer.
+        </p>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="mailto:uday445bobbili@gmail.com" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-brown-800 hover:bg-brown-900 text-beach-50 font-medium transition shadow-md shadow-brown-900/15">
+                <i class="fa-solid fa-envelope"></i> uday445bobbili@gmail.com
+            </a>
+            <a href="tel:+918555906246" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-full bg-beach-100 hover:bg-beach-200 border border-beach-300 text-brown-900 font-medium transition">
+                <i class="fa-solid fa-phone text-amberbeach-600"></i> +91 8555906246
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-beach-100 border-t border-beach-200 text-center text-xs text-brown-600">
+        <p>© 2025 Uday Kiran Bobbili • Built with Java, Spring Boot & React in mind.</p>
+    </footer>
+
+</body>
+</html>
+```
